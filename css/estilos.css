@@ -1,0 +1,487 @@
+header{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    height: 140px;
+    background-color: white;
+    display: flex;
+    border-top:  3px solid #99989E;
+    border-bottom: 3px solid #99989E;
+    /*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+   
+ }
+
+header img{
+    margin-left: 40%;
+    width: 17%;
+    height: 100%;
+    
+
+}
+
+ .menu_bar {
+	display:none;
+}
+
+body{
+
+   margin: 0;
+     background:#99989E;
+
+    background: -webkit-linear-gradient(-90deg,white,#99989E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg,white,#99989E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg,white,#99989E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg,white,#99989E); /* Standard syntax */
+
+}
+
+
+
+nav {
+
+    float: left;
+    position: fixed;
+    top: 0px;
+	right: 0px;
+    margin-top: 140px;
+
+
+    height: 50px;
+    background:#116493;
+   
+
+
+
+    border-top:  3px solid white;
+    padding:0;
+    width:100%;
+    display: flex;
+    
+    
+}
+
+  ul#ejm5{
+
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+  border: 0;
+    padding: 0;
+    margin: 0;
+        
+    }
+     
+    ul#ejm5 li{
+
+    	float: left;
+    	padding-bottom: 0px;
+    }
+    ul#ejm5 li a{
+    	padding: 0px;
+        position: relative;
+        overflow:hidden;
+        color:#fff;
+        perspective: 1000px;
+        float: left;
+ 		 font-family: 'Raleway',Arial, Helvetica, sans-serif;
+  		font-size: 1.2em;
+		line-height: 1.2;
+  		padding-left: 15px;
+  		 text-shadow: 2px 2px black;
+
+    }
+    ul#ejm5 li a span{
+		display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  		padding: 15px;
+  		padding-left: 10px;
+  		padding-right: 10px;
+ 		transition: transform 0.3s ease 0s;
+        transform-origin: 50% 0px 0px;
+        transform-style: preserve-3d;
+
+    }
+    ul#ejm5 li a span:before{
+    	padding-left: 10px;
+        padding-right: 10px;
+         position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background:  #99989E;
+        content: attr(data-title);
+        transition: #000 0.1s ease 0s;
+        transform: rotateX(-90deg);
+        transform-origin: 50% 0px 0px;   
+        padding-top: 7px;    
+    }
+    ul#ejm5 li :hover span {
+    	box-shadow: inset 0 0 0 2px white;
+    	transform: rotateX(90deg) translateY(-22px);
+        
+
+    }
+    ul#ejm5 li :hover span::before {
+    
+    text-decoration: underline;
+    color:#fff;
+    float: left;
+ 	 font-family: 'Raleway',Arial, Helvetica, sans-serif;
+  	font-size: 1em;
+	line-height: 1.2;
+  	background:  0% 0% #99989E;
+
+    }
+
+    #contenedor{
+
+	padding-top: 40px;  
+    overflow:hidden;
+    padding:0;
+    width:100%;
+	height: 2375px;
+	
+
+
+
+}
+
+    .slider{
+	padding-top: 185px;
+    width: 100%;
+    height: 600px;
+    margin:auto; 
+    overflow: hidden;
+
+   
+
+
+}
+.slider ul{
+    padding: 0;
+    margin:0;
+    display: flex;
+    width: 400%;
+    padding: 0;
+
+    animation: cambio 30s infinite alternate;
+   
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+
+    width: 100%;
+    height: 600px;
+    
+}
+@keyframes cambio {
+
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+.contenido{
+    width: 100%;
+    height: 900px;
+    margin:auto; 
+    overflow: hidden;
+    background-color: #3488BB;
+   
+
+
+
+}
+
+.contenidoDos{
+    width: 100%;
+    height: 680px;
+    margin:auto; 
+    overflow: hidden;
+
+    
+
+
+    /*
+     background-image: url('../img/2.jpg');
+    background-repeat: repeat-y; 
+    background-repeat: repeat-x; */
+
+
+
+}
+.cont{
+    height: 100%;
+    width: 100%;
+    display: block;
+   
+}
+.contenidoTitulo{
+
+    width: 100%;
+    
+    height: 20%;
+    text-align: center;
+    background:#116493;
+
+}
+.contenidoTituloDos{
+
+    width: 100%;
+    
+    height: 25%;
+    text-align: center;
+    background-color:#116493;
+
+}
+
+.img-circle{
+
+    padding: 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+h2{
+
+    text-align: center;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    text-shadow: 2px 2px black;
+}
+.contenido-servicios {
+
+    display: flex;
+    width: 100%;
+    height: 25%;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.contenido-serviciosDos {
+    margin-top: 25px;
+    color: #ccc;
+    width: 100%;
+    height: 38%;
+    font-size: 23px;
+     text-shadow: 1px 1px black;
+    
+}
+
+.contenido-serviciosDos h3 {
+
+    color: #fff;
+    margin-top: 0;
+    font-size: 30px;
+     text-shadow: 1px 1px black;
+}
+
+.inner{
+    text-align : justify;
+    width: 50%;
+    color: #ccc;
+    font-size: 15.5px;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    display: inline-flex;
+
+    
+}
+.inner:hover{
+    padding-left: 15px;
+    padding-top: 10px;
+    transform: scale(1.2,1.4);
+    background-color: #3488BB;
+      
+    }
+
+
+
+
+.text {
+    padding-left: 20px;
+    padding-right: 100px;
+}
+h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 24px;
+     text-shadow: 1px 1px black;
+}
+
+
+
+
+
+
+footer{
+    bottom: 0;
+    height: 150px;
+    background:white;
+
+    overflow:hidden;
+    width:100%;
+    display: block;
+    border-top:  3px solid #116493;
+
+}
+footer .icon-social{
+    margin-top: 40px;
+        width: 100%;
+        height: 35%;
+        text-align: center;
+        margin-bottom: 0;
+ }
+ footer .copyright{
+        width: 100%;
+        height: 50%;
+        margin-top: 0;
+        text-align: center;
+        color: black;
+        font-family: 'Raleway',Arial, Helvetica, sans-serif;
+        font-size: 0.9em;
+        line-height: 1.2;
+        
+ }
+
+ footer a{
+
+        padding-left: 22px;
+ }
+
+
+@media only screen and (max-width: 750px) {
+
+header{
+margin:0;
+height: 80px;
+
+}
+
+ul#ejm5 li a{
+    	
+font-size: 0.97em;
+padding-left: 0px;
+}
+
+nav {
+		width: 40%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+
+nav ul#ejm5 {
+	list-style:none;
+}
+
+ nav ul#ejm5 li {
+
+ 	height: 69px;
+	display:block;
+	position: relative;
+}
+ 
+ nav ul#ejm5 li:hover {
+
+	background:#3488BB;
+}
+ 
+ nav ul#ejm5 li a {
+	
+	display:block;
+	padding-top: 0;
+	padding-bottom: 5px;
+	padding: 10px;
+	height: 121px;
+}
+ 
+ nav ul#ejm5 li a span {
+	margin-right:10px;
+}
+ 
+ nav ul#ejm5 li:hover .children {
+	display:block;
+}
+
+	.menu_bar {
+		 top: 0px;
+		right: 0px;
+		display:flex;
+		width:100%;
+		margin-top:86px;
+		position: fixed;
+		top:0;
+		background:#3488BB;
+		-webkit-border-radius:10px;/*Para chrome y Safari*/
+        -moz-border-radius:10px;/*Para Firefox*/
+        -o-border-radius:10px;/*Para Opera*/
+    	border-radius:10px;/*El estandar por defecto*/
+	}
+ 
+	.menu_bar .bt-menu {
+		width: 100%;
+		display: block;
+		padding: 10px;
+		color: white;
+		overflow: hidden;
+		font-family: fantasy;
+    	font-size: 1.2em;
+		text-decoration: underline;
+		text-shadow: 2px 2px black;
+	}
+	.menu_bar span {
+		float: right;
+		font-size: 30px;
+	}
+
+	.slider {
+    padding-top: 129px;
+    height: 400px;
+ 	}
+ 	.slider img {
+    height: 400px;
+}
+
+#contenedor{
+
+    height: 1210px;
+}
+footer p {
+   
+    margin-left: 35%;
+}
+
+}
+
