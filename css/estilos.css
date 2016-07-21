@@ -43,8 +43,44 @@ body{
     background: linear-gradient(-90deg,white,#99989E); /* Standard syntax */
 
 }
+.social{
+    position: fixed;
+
+    padding: 0;
+    top: 300px;
+    z-index: 2000;
+}
+.social ul{
+
+list-style: none;
+padding-left: 0;
+
+}
+.social ul li a {
+
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    -webkit-transition: padding 500ms ; /* Safari */
+    transition: padding 650ms ;
+    
+}
 
 
+.social ul li .icon-facebook {background:#3b5998; }
+.social ul li .icon-twitter {background:#00abf0; }
+.social ul li .icon-instagram {background: #e95950; }
+.social ul li .icon-message {background:#4dc247; }
+.social ul li .icon-google{background:#dd4b39; }
+.social ul li .icon-email{background:#666666; }
+
+.social ul li a:hover{
+
+    padding: 12px 30px;
+    background: #000; 
+}
 
 nav {
 
