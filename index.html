@@ -6,9 +6,33 @@
 	<title>Novus Aedis</title>
 	<link rel="shortcut icon"  href="img/logoHead.jpg">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+	<link rel="stylesheet" type="text/css" href="css/icomoon/fonts.css">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="main.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script>
+   $(function(){
+  $(".slider").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 5000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+  </script>
 
 </head>
 <body>
@@ -23,12 +47,12 @@
 	
 
 	<ul>
-		<li><a href="https://www.facebook.com/inmobiliaria.novusaedis/?ref=ts&fref=ts" target="_blank" class="icon-facebook"></a></li>
-		<li><a href="http://www." target="_blank" class="icon-twitter"></a></li>
+		<li><a href="https://www.facebook.com/inmobiliaria.novusaedis/?ref=ts&fref=ts" target="_blank" class="icon-facebook2"></a></li>
+		<li><a href="https://twitter.com/Novus_Aedis?lang=es" target="_blank" class="icon-twitter"></a></li>
 		<li><a href="https://www.instagram.com/novusaedis/" target="_blank" class="icon-instagram"></a></li>
-		<li><a href="http://www." target="_blank" class=" icon-google"></a></li>
-		<li><a href="http://www." target="_blank" class="icon-message"></a></li>
-		<li><a href="mailto:" class="icon-email"></a></li>
+		<li><a href="http://www." target="_blank" class="icon-google-plus"></a></li>
+		<li><a href="whatsapp://send?text=Como crear un boton de compartir en whatsapp" data-action="share/whatsapp/share" target="_blank" class="icon-whatsapp"></a></li>
+		<li><a href="mailto:" class="icon-mail2"></a></li>
 		
 	</ul>
 </div>
@@ -49,13 +73,13 @@
 </nav>
 <section id="contenedor">
 <div class="slider">
-	<ul>
-		<li><img src="img/1.jpg" alt=""></li>
-		<li><img src="img/2.jpg" alt=""></li>
-		<li><img src="img/3.jpg" alt=""></li>
-		<li><img src="img/4.jpg" alt=""></li>
+	
+		<img src="img/1.jpg" alt="">
+		<img src="img/2.jpg" alt="">
+		<img src="img/3.jpg" alt="">
+		<img src="img/4.jpg" alt="">
 		
-	</ul>
+	
 
 </div>
 <div class="contenido">
@@ -95,11 +119,7 @@
 </div>
 </section>
 <footer>
-<p class="icon-social">
-<a href="URL-Twitter" target="_blank"><img alt="siguenos en Twitter" height="40px" src="img/twitter.png" title="siguenos en twitter" width="40px" /></a>
-<a href="https://www.facebook.com/inmobiliaria.novusaedis/?ref=ts&fref=ts" target="_blank"><img alt="siguenos en Facebook" height="40px" src="img/facebook.png" title="siguenos en facebook" width="40px" /></a>
-<a href="https://www.instagram.com/novusaedis/" target="_blank"><img alt="siguenos en Instagram" height="40px" src="img/instagram.png" title="siguenos en instagram" width="40px" /></a>
-</p>
+
 <P  class="copyright"><strong>© Copyright 2016 - NOVUS AEDIS - INMOBILIARIA</strong></P>
 
 </footer>

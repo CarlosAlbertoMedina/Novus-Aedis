@@ -17,6 +17,7 @@ header{
     -moz-border-radius:10px;/*Para Firefox*/
     -o-border-radius:10px;/*Para Opera*/
     border-radius:10px;/*El estandar por defecto*/
+    z-index: 2000;
    
  }
 
@@ -47,7 +48,7 @@ body{
     position: fixed;
 
     padding: 0;
-    top: 300px;
+    top: 270px;
     z-index: 2000;
 }
 .social ul{
@@ -69,12 +70,12 @@ padding-left: 0;
 }
 
 
-.social ul li .icon-facebook {background:#3b5998; }
+.social ul li .icon-facebook2 {background:#3b5998; }
 .social ul li .icon-twitter {background:#00abf0; }
 .social ul li .icon-instagram {background: #e95950; }
-.social ul li .icon-message {background:#4dc247; }
-.social ul li .icon-google{background:#dd4b39; }
-.social ul li .icon-email{background:#666666; }
+.social ul li .icon-whatsapp {background:#4dc247; }
+.social ul li .icon-google-plus{background:#dd4b39; }
+.social ul li .icon-mail2{background:#666666; }
 
 .social ul li a:hover{
 
@@ -89,6 +90,7 @@ nav {
     top: 0px;
 	right: 0px;
     margin-top: 140px;
+    z-index: 2000;
 
 
     height: 50px;
@@ -144,6 +146,7 @@ nav {
         transform-style: preserve-3d;
 
     }
+    
     ul#ejm5 li a span:before{
     	padding-left: 10px;
         padding-right: 10px;
@@ -190,10 +193,9 @@ nav {
 
 }
 
-    .slider{
+.slider{
 	padding-top: 185px;
     width: 100%;
-    height: 600px;
     margin:auto; 
     overflow: hidden;
 
@@ -201,42 +203,52 @@ nav {
 
 
 }
-.slider ul{
-    padding: 0;
-    margin:0;
-    display: flex;
-    width: 400%;
-    padding: 0;
 
-    animation: cambio 30s infinite alternate;
-   
-}
-.slider li{
-    width: 100%;
-    list-style: none;
-}
 .slider img{
 
     width: 100%;
-    height: 600px;
+   
     
 }
-@keyframes cambio {
+.slider .active{
 
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
+    background: black;
+}
+.slider img{
 
-
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+    height: 100%;
 }
 
+.slidesjs-pagination{
+margin:0;
+background: #99989E;
+list-style: none;
+overflow: hidden;
+}
+
+.slidesjs-pagination li{
+    float: left;
+}
+.slidesjs-pagination li a {
+
+    display: block;
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.slidesjs-pagination li a:hover {
+
+    background: black;
+}
+.slidesjs-navigation{
+    color: white;
+    background: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 20px;
+    float: right;
+}
 
 .contenido{
     width: 100%;
@@ -253,7 +265,8 @@ nav {
 
 .cont{
     height: 100%;
-    width: 100%;
+    width: 95%;
+    margin-left: 5%;
     display: block;
    
 }
@@ -296,7 +309,7 @@ h2{
     display: flex;
     width: 100%;
     height: 25%;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 70px;
 }
 .contenido-serviciosDos {
@@ -318,6 +331,8 @@ h2{
 }
 
 .inner{
+    padding-left: 17px;
+    padding-right: 0px;
     text-align : justify;
     width: 50%;
     color: #ccc;
@@ -328,8 +343,9 @@ h2{
     
 }
 .inner:hover{
-    padding-left: 15px;
-    padding-top: 10px;
+    padding-left: 17px;
+    padding-right: 0px;
+    padding-top: 5px;
     transform: scale(1.2,1.4);
     background-color: #3488BB;
       
@@ -365,17 +381,10 @@ footer{
     border-top:  3px solid #116493;
 
 }
-footer .icon-social{
-    margin-top: 40px;
-        width: 100%;
-        height: 35%;
-        text-align: center;
-        margin-bottom: 0;
- }
  footer .copyright{
         width: 100%;
         height: 50%;
-        margin-top: 0;
+        margin-top: 40px;
         text-align: center;
         color: black;
         font-family: 'Raleway',Arial, Helvetica, sans-serif;
